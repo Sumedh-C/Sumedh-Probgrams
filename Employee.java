@@ -1,49 +1,35 @@
-    package springBeanCollabration;
+package com.program3;
 
-public class Employee 
+public class Employee
 {
+	private String empName;
+	private String empRoll;
+	private int  empId;
 	
-	private int employeeId;
-	private String employeeName;
-	private String employeeRole;
-	private double employeeSalary;
+	private Department department;
+	public Employee() {
+		super();
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public void setEmpRoll(String empRoll) {
+		this.empRoll = empRoll;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
 	
-	private Department department;//bean
-	
-	public Employee()
-	{
-		
-	}
-
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
-	}
-
-	public void setEmployeeName(String employeeName) {
-		this.employeeName = employeeName;
-	}
-
-	public void setEmployeeRole(String employeeRole) {
-		this.employeeRole = employeeRole;
-	}
-
-	public void setEmployeeSalary(double employeeSalary) {
-		this.employeeSalary = employeeSalary;
-	}
-
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
-
 	@Override
-	public String toString() 
-	{
-		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeRole="
-				+ employeeRole + ", employeeSalary=" + employeeSalary + ", department=" + department + "]";
+	public String toString() {
+		return "Employee"
+				+ " [empName=" + empName + ", empRoll=" + empRoll + ", empId=" + empId + ", department="
+				+ department + "]";
 	}
-	
-	
 
+	
+	
 }
-
-    
