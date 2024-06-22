@@ -1,35 +1,30 @@
-package com.program3;
+package springAnnotation;
 
-public class Employee
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Employee 
 {
+	private int empId;
 	private String empName;
 	private String empRoll;
-	private int  empId;
+	private int empSalary;
 	
-	private Department department;
-	public Employee() {
+	 @Autowired
+       private	Department department;
+	public Employee(int empId, String empName, String empRoll, int empSalary, Department department) {
 		super();
-	}
-	public void setEmpName(String empName) {
-		this.empName = empName;
-	}
-	public void setEmpRoll(String empRoll) {
-		this.empRoll = empRoll;
-	}
-	public void setEmpId(int empId) {
 		this.empId = empId;
-	}
-	
-	public void setDepartment(Department department) {
+		this.empName = empName;
+		this.empRoll = empRoll;
+		this.empSalary = empSalary;
 		this.department = department;
 	}
 	@Override
 	public String toString() {
-		return "Employee"
-				+ " [empName=" + empName + ", empRoll=" + empRoll + ", empId=" + empId + ", department="
-				+ department + "]";
+		return "Employee [empId=" + empId + ", empName=" + empName + ", empRoll=" + empRoll + ", empSalary=" + empSalary
+				+ ", department=" + department + "]";
 	}
-
+	
 	
 	
 }
