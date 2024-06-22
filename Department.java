@@ -1,22 +1,21 @@
-package com.program3;
+package springAnnotation;
 
 public class Department 
 {
-	private int departmentId;
-	private String departmentName;
+	private int departmntId;
+	private String DepartmentRoll;
+	
 	public Department() {
 		super();
 	}
-	public void setDepartmentId(int departmentId) {
-		this.departmentId = departmentId;
-	}
-	public void setDepartmentName(String departmentName) {
-		this.departmentName = departmentName;
+	public Department(int departmntId, String departmentRoll) {
+		super();
+		this.departmntId = departmntId;
+		DepartmentRoll = departmentRoll;
 	}
 	@Override
 	public String toString() {
-		return "Department [departmentId=" + departmentId + ", departmentName=" + departmentName + "]";
+		return "Department [departmntId=" + departmntId + ", DepartmentRoll=" + DepartmentRoll + "]";
 	}
-	
 	
 }
