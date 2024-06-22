@@ -1,28 +1,37 @@
-package com.program4;
+package com.program;
 
 public class Student 
 {
-	private String stuendtName;
-	private int  studentRollNo;
-	private String studentClass;
+	private String  studentName;
+	private  int studentRollNo;
+	private String studentEmail;
 	
 	
 	public Student() {
 		super();
 	}
-	public void setStuendtName(String stuendtName) {
-		this.stuendtName = stuendtName;
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public int getStudentRollNo() {
+		return studentRollNo;
 	}
 	public void setStudentRollNo(int studentRollNo) {
 		this.studentRollNo = studentRollNo;
 	}
-	public void setStudentClass(String studentClass) {
-		this.studentClass = studentClass;
+	public String getStudentEmail() {
+		return studentEmail;
+	}
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
 	}
 	@Override
 	public String toString() {
-		return "Student [stuendtName=" + stuendtName + ", studentRollNo=" + studentRollNo + ", studentClass="
-				+ studentClass + "]";
+		return "Student [studentName=" + studentName + ", studentRollNo=" + studentRollNo + ", studentEmail="
+				+ studentEmail + "]";
 	}
 	
 }
